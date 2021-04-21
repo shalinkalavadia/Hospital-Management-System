@@ -1,0 +1,220 @@
+<html>
+<head>
+<style>
+ body{
+  background-image: url('img.jpg');
+  background-size: cover;
+color:white;
+ }
+#form
+{
+height:700px;
+width:330px;
+opacity:0.8;
+margin-left:1000px;
+margin-top:0px;
+background-color:black;
+}
+.a {
+height:40px;
+width:180px;
+border-radius:10px;
+margin-left:10px;
+margin-top:10px;
+}
+.b {
+height:40px;
+width:180px;
+border-radius:10px;
+margin-left:10px;
+margin-top:10px;
+background-color:red;
+color:white;
+}
+.c {
+height:40px;
+width:180px;
+border-radius:10px;
+margin-left:10px;
+margin-top:10px;
+background-color:blue;
+color:white;
+}
+.d {
+height:40px;
+width:60px;
+background-color:black;
+color:white;
+}
+</style>
+</head>
+<body>
+<div id="form" align="center">
+<h1>BOOK APPOINTMENT</h1>
+<form  onsubmit="return validateForm()" >
+<table border="0" align="center">
+<tr>
+<td>
+<b>PATIENT NAME</b>
+</td>
+<td><input class="a" id="a"  type="text" placeholder="Enter your name"/>
+</td>
+</tr>
+<tr>
+<td>
+<b>E-MAIL ID</b>
+</td>
+<td>
+<input  class="a"  id="b"  type="email" placeholder="Enter your email">
+</td>
+</tr>
+<tr>
+<td>
+<b>MOBILE NUMBER</b>
+</td>
+<td>
+<input   class="a"   id="c" type="tel" placeholder="Enter your number">
+</td>
+</tr>
+
+<tr>
+<td>
+<b>DATE OF BIRTH</b>
+</td>
+<td>
+<SELECT  class="a"  >
+<OPTION>DAY</OPTION>
+<OPTION>01</OPTION>
+<OPTION>02</OPTION>
+<OPTION>03</OPTION>
+<OPTION>04</OPTION>
+<OPTION>05</OPTION>
+<OPTION>06</OPTION>
+<OPTION>07</OPTION>
+<OPTION>08</OPTION>
+<OPTION>09</OPTION>
+<OPTION>10</OPTION>
+<OPTION>11</OPTION>
+<OPTION>12</OPTION>
+<OPTION>13</OPTION>
+<OPTION>14</OPTION>
+<OPTION>15</OPTION>
+<OPTION>16</OPTION>
+<OPTION>17</OPTION>
+<OPTION>18</OPTION>
+<OPTION>19</OPTION>
+<OPTION>20</OPTION>
+<OPTION>21</OPTION>
+<OPTION>22</OPTION>
+<OPTION>23</OPTION>
+<OPTION>24</OPTION>
+<OPTION>25</OPTION>
+<OPTION>26</OPTION>
+<OPTION>27</OPTION>
+<OPTION>28</OPTION>
+<OPTION>29</OPTION>
+<OPTION>30</OPTION>
+<OPTION>31</OPTION>
+</SELECT>
+<SELECT  class="a" ><OPTION>MONTH</OPTION>
+<OPTION>JAN</OPTION>
+<OPTION>FEB</OPTION>
+<OPTION>MAR</OPTION>
+<OPTION>APR</OPTION>
+<OPTION>MAY</OPTION>
+<OPTION>JUN</OPTION>
+<OPTION>JUL</OPTION>
+<OPTION>AUG</OPTION>
+<OPTION>SEP</OPTION>
+<OPTION>OCT</OPTION>
+<OPTION>NOV</OPTION>
+<OPTION>DEC</OPTION>
+</SELECT>
+<SELECT  class="a" ><OPTION>YEAR</OPTION>
+<OPTION>1992</OPTION>
+<OPTION>1993</OPTION>
+<OPTION>1994</OPTION>
+<OPTION>1995</OPTION>
+<OPTION>1996</OPTION>
+<OPTION>1997</OPTION>
+<OPTION>1998</OPTION>
+<OPTION>1999</OPTION>
+<OPTION>2000</OPTION>
+<OPTION>2001</OPTION>
+<OPTION>2002</OPTION>
+<OPTION>2003</OPTION>
+<OPTION>2004</OPTION>
+<OPTION>2005</OPTION>
+<OPTION>2006</OPTION>
+<OPTION>2007</OPTION>
+<OPTION>2008</OPTION>
+<OPTION>2009</OPTION>
+<OPTION>2010</OPTION>
+<OPTION>2011</OPTION>
+<OPTION>2012</OPTION>
+<OPTION>2013</OPTION>
+<OPTION>2014</OPTION>
+<OPTION>2015</OPTION>
+<OPTION>2016</OPTION>
+<OPTION>2017</OPTION>
+<OPTION>2018</OPTION>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<b>GENDER</b>
+</td>
+<td>
+<input type="radio" name="male"><b>MALE</b>
+<br><input  type="radio" name="male"><b>FEMALE</b>
+</td>
+</tr>
+<tr>
+<td>
+<b>DATE OF APPOINTMENT</b>
+</td>
+<td>
+<input  id="d" class="a" type="date"
+  value="yyyy-mm-dd"
+       min="2019-03-26" max="2019-04-26">
+</td>
+</tr>
+<tr>
+<td>
+<b>DEPARTMENT</b>
+</td>
+<td>
+<SELECT  class="a" ><option>select department</option>
+<OPTION>orthopaedics</OPTION>
+<OPTION>dermatology</OPTION>
+<OPTION>cardiolog</OPTION>
+<OPTION>radiology</OPTION>
+<OPTION>surgery</OPTION>
+<OPTION>neurology</OPTION>
+</SELECT>
+</td>
+</tr>
+</table>
+<br>
+<script>
+function validateform()
+{
+if(document.getElementById('a').value == "" ||document.getElementById('b').value == "" ||document.getElementById('c').value == "" ||document.getElementById('d').value == "" ) {
+alert('please fill all fields');
+return false;
+}
+else {
+   alert("your appointment is booked");
+}
+}
+</script>
+<form>
+   <input  class="b" type="submit"  onclick="validateform();"
+      alt="submit" value="SUBMIT">
+<button  class="c" type="reset" value="Reset">RESET</button>
+</form>
+</div>
+<button class="d" onclick="window.location.href ='project.html';">BACK</button>
+</body>
+</html

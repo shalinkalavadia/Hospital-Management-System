@@ -1,0 +1,113 @@
+<html>
+<head>
+<style>
+.button {
+  background-color: #4CAF50;
+  border: 3px solid black;
+  color: white;
+  padding: 25px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button:hover {
+background-color: black;
+color: yellow;
+}
+h1 {
+        color: white;
+ padding: 50px 32px;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  border: 3px solid black;
+  color: white;
+  padding: 25px 32px;
+  font-size: 14px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 20px 40px;
+  text-decoration: none;
+  display:block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: black; color: yellow;}
+}
+</style>
+</head>
+<body background="https://www.intechnic.com/hubfs/Blog/Featured%20Images/12%20Best%20Hospital%20and%20Healthcare%20Websites.jpg">
+
+<img  align="right" border="3px" src="logo.jpg" alt="logo" width="250" height="150">
+
+<h1 align="left"><b>WELCOME TO FORTIS HEALTHCARE</b></h1>
+
+
+
+<table style="width:100%" align=center>
+<tr>
+<th> <button class="button" onclick="window.location.href = 'project.html';" >HOME</button></th>
+<th>
+<th> 
+<div class="dropdown">
+  <button class="dropbtn" >DEPARTMENTS</button>
+  <div class="dropdown-content">
+    <a href="o.html">Orthopaedics</a>
+    <a href="d.html">Dermatology</a>
+    <a href="c.html">Cardiology</a>
+    <a href="r.html">Radiology</a>
+    <a href="s.html">Surgery</a>
+    <a href="n.html">Neurology</a>
+  </div>
+</div
+</th>
+</th>
+<th> <button class="button"  onclick="window.location.href = 'emergency.html';" >EMERGENCY</button></th>
+<th> <button class="button" onclick="window.location.href = 'appointment.html';" >BOOK APPOINTMENT</button></th>
+<th> <button class="button" onclick="window.location.href = 'info.html';" >DOCTORS INFO</button></th>
+<th> <button class="button"  onclick="window.location.href = 'login.html';" >MY ACCOUNT</button></th>
+<th> <button class="button" onclick="window.location.href = 'details.html';" >APPOINTMENT DETAILS</button></th>
+<th> <button class="button" onclick="window.location.href = 'about.html';" >ABOUT US</button></th>
+</tr>
+<table style="width:100%" align=center>
+<tr>
+<th> <img onmouseover="bg(this)" onmouseout="nor(this)" src="a.jpg" width="300" height="200" ></th>
+<th> <img  onmouseover="bg(this)" onmouseout="nor(this)" src="b.jpg" width="300" height="200" ></th></th>
+<th> <img  onmouseover="bg(this)" onmouseout="nor(this)" src="d.jpg" width="300" height="200"></th>
+<th> <img  onmouseover="bg(this)" onmouseout="nor(this)" src="e.jpg" width="300" height="200" ></th>
+</tr>
+<tr>
+<th> <img  onmouseover="bg(this)" onmouseout="nor(this)" src="g.jpg" width="300" height="200" ></th>
+<th> <img onmouseover="bg(this)" onmouseout="nor(this)" src="h.jpg" width="300" height="200" ></th>
+<th> <img  onmouseover="bg(this)" onmouseout="nor(this)" src="i.jpg" width="300" height="200" ></th>
+<th> <img  onmouseover="bg(this)" onmouseout="nor(this)" src="k.jpg" width="300" height="200"></th>
+</tr>
+<script>
+function bg(x) {
+  x.style.height = "300px";
+  x.style.width = "400px";
+}
+
+function nor(x) {
+  x.style.height = "200px";
+  x.style.width = "300px";
+}
+</script>
+</body>
+</html>
